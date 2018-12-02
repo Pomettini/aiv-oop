@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"aiv-oop.h": "c",
+			"stdio.h": "c",
+			"cdefs.h": "c"
+		}
+	}
+}
