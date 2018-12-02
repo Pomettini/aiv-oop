@@ -3,7 +3,7 @@
 
 #include <stdlib.h>
 
-#define DELEGATE(name) void(*name)()
+#define VMETHOD(name) void(*name)()
 #define EVENT(name) void(*name)(void*)
 #define ARG(name) (void*)name
 #define NEW(type) (type*)malloc(sizeof(type))

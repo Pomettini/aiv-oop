@@ -1,7 +1,7 @@
 #include "aiv-oop.h"
 #include <stdio.h>
 
-void test_delegate()
+void test_virtual_method()
 {
     printf("Hello\n");
 }
@@ -20,13 +20,13 @@ typedef struct player
 {
     int x;
     int y;
-    DELEGATE(on_death);
+    VMETHOD(on_death);
 } player;
 
 int main(int argc, char **argv)
 {
-    DELEGATE(aiv_delegate) = test_delegate;
-    aiv_delegate();
+    VMETHOD(virtual_method) = test_virtual_method;
+    virtual_method();
 
     EVENT(aiv_event) = test_event;
     aiv_event(ARG(10));
